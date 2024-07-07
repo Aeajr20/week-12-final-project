@@ -1,60 +1,86 @@
-// Importing necessary hooks and components
-import React, { useState } from "react";
+$(document).ready(function() {
+    // Array of characters
+    let characters = [
+        {
+            "fullName": "Rick Sanchez",
+            "characterTrait": "Scientist",
+            "id": 1
+        },
+        {
+            "fullName": "Morty Smith",
+            "characterTrait": "Student",
+            "id": 2
+        },
+        {
+            "fullName": "Beth Smith",
+            "characterTrait": "Horse Surgeon",
+            "id": 3
+        },
+        {
+            "fullName": "Jerry Smith",
+            "characterTrait": "Unemployed",
+            "id": 4
+        },
+        {
+            "fullName": "Summer Smith",
+            "characterTrait": "Student",
+            "id": 5
+        }
+    ];
 
-// The main App component
-function App() {
-  // Using the useState hook to create state variables for the current character and search term
-  // The currentCharacter is initially set to the first character in the characters array
-  // The searchTerm is initially set to an empty string
-  const [currentCharacter, setCurrentCharacter] = useState(characters[0]);
-  const [searchTerm, setSearchTerm] = useState('');
+    // Function to display characters
+    function displayCharacters() {
+        const tbody = $('table tbody');
+        tbody.empty(); // Clear existing rows
 
-  // This function updates the currentCharacter state variable when a character is selected
-  const handleCharacterSelect = (character) => {
-    setCurrentCharacter(character);
-  };
+        characters.forEach(character => {
+            tbody.append(`
+                <tr data-id="${character.id}">
+                    <td>${character.id}</td>
+                    <td>${character.fullName}</td>
+                    <td>${character.characterTrait}</td>
+                    <td><button class="btn btn-warning deleteBtn">Delete</button></td>
+                </tr>
+            `);
+        });
+    }
 
-  // This creates a new array of characters that includes only those whose full name includes the search term
-  // The search is case-insensitive
-  const filteredCharacters = characters.filter(character =>
-    character.fullName.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+    // Initial display of characters
+    displayCharacters();
 
-  // The component returns a JSX element
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Rick and Morty Character Viewer</h1>
-        <input
-          type="text"
-          placeholder="Search characters..."
-          value={searchTerm}
-          // When the input changes, the searchTerm state variable is updated
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <div className="character-selector">
-          {/* For each character in the filteredCharacters array, a button is created */}
-          {/* When a button is clicked, the handleCharacterSelect function is called with the character as an argument */}
-          {filteredCharacters.map((character, index) => (
-            <button key={index} onClick={() => handleCharacterSelect(character)}>
-              {character.fullName}
-            </button>
-          ))}
-        </div>
-        <div className="character-display">
-          {/* The current character's information is displayed */}
-          <h2>{currentCharacter.fullName}</h2>
-          <p>Character Trait: {currentCharacter.characterTrait}</p>
-          <p>Status: {currentCharacter.status}</p>
-          <p>Species: {currentCharacter.species}</p>
-          <p>Origin: {currentCharacter.origin}</p>
-          <p>Current Location: {currentCharacter.currentLocation}</p>
-          <p>Favorite Catchphrase: {currentCharacter.favoriteCatchphrase}</p>
-        </div>
-      </header>
-    </div>
-  );
-}
+    // Add character form submission handler
+    $('#addCharacterForm').submit(function(event) {
+        event.preventDefault();
+        const fullName = $('#newName').val();
+        const characterTrait = $('#newTrait').val();
+        const id = characters.length + 1;
+        characters.push({ fullName, characterTrait, id });
+        displayCharacters();
+        $('#addCharacterForm').trigger('reset');
+    });
 
-// The App component is exported so it can be used in other parts of the application
-export default App;
+    // Update character form submission handler
+    $('#updateCharacterForm').submit(function(event) {
+        event.preventDefault();
+        const id = $('#updateId').val();
+        const fullName = $('#updateName').val();
+        const characterTrait = $('#updateTrait').val();
+        const character = characters.find(character => character.id == id);
+        if (character) {
+            character.fullName = fullName;
+            character.characterTrait = characterTrait;
+        }
+        displayCharacters();
+        $('#updateCharacterForm').trigger('reset');
+    });
+
+    // Delete button click handler
+    $('table').on('click', '.deleteBtn', function() {
+        const id = $(this).closest('tr').data('id');
+        const index = characters.findIndex(character => character.id == id);
+        if (index !== -1) {
+            characters.splice(index, 1);
+            displayCharacters();
+        }
+    });
+});

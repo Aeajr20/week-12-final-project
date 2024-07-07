@@ -2,10 +2,12 @@ body {
     background-color: #35831d;
     font-family: 'Roboto', sans-serif;
     color: #000000;
+    font-size: 20px; /* Adjust the base font size */
 }
 
 h1, h4 {
     color: #e4ff4a;
+    font-size: 2.5em; /* Example: Set h1 and h4 font sizes */
 }
 
 .table-hover tbody tr:hover {
@@ -14,16 +16,19 @@ h1, h4 {
 
 th, td {
     text-align: center;
+    font-size: 1.2em; /* Example: Set table cell font size */
 }
 
 .form-control {
     border-radius: 0;
     border: 2px solid limegreen;
+    font-size: 1em; /* Example: Set form control font size */
 }
 
 .btn-primary {
     background-color: #43a047;
     border-color: #43a047;
+    font-size: 1em; /* Example: Set button font size */
 }
 
 .btn-primary:hover {
@@ -32,11 +37,14 @@ th, td {
 }
 
 .btn-danger {
-    background-color: #e53935;
-    border-color: #ff0400;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000000;
+    font-size: 1em; /* Example: Set button font size */
 }
 
 .btn-danger:hover {
-    background-color: #c62828;
-    border-color: #c62828;
+    background-color: #ffa000;
+    border-color: #ffa000;
+    font-size: 1em; /* Example: Set button font size */
 }
