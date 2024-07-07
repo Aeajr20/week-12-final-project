@@ -1,0 +1,42 @@
+body {
+    background-color: #35831d;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+h1, h4 {
+    color: #e4ff4a;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e4ff4a;
+}
+
+th, td {
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 0;
+    border: 2px solid limegreen;
+}
+
+.btn-primary {
+    background-color: #43a047;
+    border-color: #43a047;
+}
+
+.btn-primary:hover {
+    background-color: #388e3c;
+    border-color: #388e3c;
+}
+
+.btn-danger {
+    background-color: #e53935;
+    border-color: #ff0400;
+}
+
+.btn-danger:hover {
+    background-color: #c62828;
+    border-color: #c62828;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Character Roster</title>
+    <!-- Link to Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Link to custom CSS for additional styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Page title -->
+        <h1 class="text-center">Rick and Morty Character Roster</h1>
+
+        <!-- Form for adding a new character -->
+        <form id="addCharacterForm" class="mb-4">
+            <h4>Add New Character Form</h4>
+            <div class="mb-3">
+                <label for="newName">Full Name</label>
+                <input id="newName" class="form-control" placeholder="Rick Sanchez" />
+            </div>
+            <div class="mb-3">
+                <label for="newTrait">Character Trait</label>
+                <input id="newTrait" class="form-control" placeholder="Scientist" />
+            </div>
+            <button id="submitCharacter" class="btn btn-primary" type="submit">Submit</button>
+        </form>
+
+        <!-- Form for updating an existing character -->
+        <form id="updateCharacterForm" class="mb-4">
+            <h4>Update Character Form</h4>
+            <div class="mb-3">
+                <label for="updateId">Character ID</label>
+                <input id="updateId" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label for="updateName">Character Name</label>
+                <input id="updateName" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label for="updateTrait">Character Trait</label>
+                <input id="updateTrait" class="form-control" />
+            </div>
+            <button id="updateCharacter" class="btn btn-primary" type="submit">Update</button>
+        </form>
+
+        <!-- Table for displaying the character roster -->
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                  <th>Character ID</th>
+                  <th>Character Name</th>
+                  <th>Character Trait</th>
+                  <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="index.js"></script>
+</body>
+</html>

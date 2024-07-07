@@ -1,0 +1,52 @@
+[
+  {
+    "fullName": "Rick Sanchez",
+    "characterTrait": "Scientist",
+    "species": "Human",
+    "status": "Alive",
+    "origin": "Earth (C-137)",
+    "currentLocation": "Earth (Replacement Dimension)",
+    "favoriteCatchphrase": "Wubba lubba dub dub!",
+    "id": 1
+  },
+  {
+    "fullName": "Morty Smith",
+    "characterTrait": "Student",
+    "species": "Human",
+    "status": "Alive",
+    "origin": "Earth (C-137)",
+    "currentLocation": "Earth (Replacement Dimension)",
+    "favoriteCatchphrase": "Aw geez, Rick.",
+    "id": 2
+  },
+  {
+    "fullName": "Beth Smith",
+    "characterTrait": "Horse Surgeon",
+    "species": "Human",
+    "status": "Alive",
+    "origin": "Earth (C-137)",
+    "currentLocation": "Earth (Replacement Dimension)",
+    "favoriteCatchphrase": "I'm not my father.",
+    "id": 3
+  },
+  {
+    "fullName": "Jerry Smith",
+    "characterTrait": "Unemployed",
+    "species": "Human",
+    "status": "Alive",
+    "origin": "Earth (C-137)",
+    "currentLocation": "Earth (Replacement Dimension)",
+    "favoriteCatchphrase": "Life is effort and I'll stop when I die!",
+    "id": 4
+  },
+  {
+    "fullName": "Summer Smith",
+    "characterTrait": "Student",
+    "species": "Human",
+    "status": "Alive",
+    "origin": "Earth (C-137)",
+    "currentLocation": "Earth (Replacement Dimension)",
+    "favoriteCatchphrase": "That's so sad!",
+    "id": 5
+  }
+]
