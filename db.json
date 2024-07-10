@@ -1,27 +1,291 @@
-[
+{
+  "characters":[
   {
-    "fullName": "Rick Sanchez",
-    "characterTrait": "Scientist",
-    "id": 1
+      "fullName": "Rick Sanchez",
+      "characterTrait": "Scientist",
+      "id": 1,
+      "origin": "Earth"
   },
   {
-    "fullName": "Morty Smith",
-    "characterTrait": "Student",
-    "id": 2
+      "fullName": "Morty Smith",
+      "characterTrait": "Student",
+      "id": 2,
+      "origin": "Earth"
   },
   {
-    "fullName": "Beth Smith",
-    "characterTrait": "Horse Surgeon",
-    "id": 3
+      "fullName": "Summer Smith",
+      "characterTrait": "Student",
+      "id": 3,
+      "origin": "Earth"
   },
   {
-    "fullName": "Jerry Smith",
-    "characterTrait": "Unemployed",
-    "id": 4
+      "fullName": "Beth Smith",
+      "characterTrait": "Horse Surgeon",
+      "id": 4,
+      "origin": "Earth"
   },
   {
-    "fullName": "Summer Smith",
-    "characterTrait": "Student",
-    "id": 5
+      "fullName": "Jerry Smith",
+      "characterTrait": "Unemployed",
+      "id": 5,
+      "origin": "Earth"
+  },
+  {
+      "fullName": "Birdperson",
+      "characterTrait": "Warrior",
+      "id": 6,
+      "origin": "Bird World"
+  },
+  {
+      "fullName": "Squanchy",
+      "characterTrait": "Party Animal",
+      "id": 7,
+      "origin": "Squanch"
+  },
+  {
+      "fullName": "Mr. Poopybutthole",
+      "characterTrait": "Friendly",
+      "id": 8,
+      "origin": "Unknown"
+  },
+  {
+      "fullName": "Unity",
+      "characterTrait": "Hive Mind",
+      "id": 9,
+      "origin": "Unknown"
+  },
+  {
+      "fullName": "Abradolf Lincler",
+      "characterTrait": "Conflicted",
+      "id": 10,
+      "origin": "Unknown"
+  },
+  {
+      "fullName": "Evil Morty",
+      "characterTrait": "Manipulative",
+      "id": 11,
+      "origin": "Unknown"
+  },
+  {
+      "fullName": "Snowball",
+      "characterTrait": "Genius Dog",
+      "id": 12,
+      "origin": "Earth"
+  },
+  {
+      "fullName": "Scary Terry",
+      "characterTrait": "Nightmare",
+      "id": 13,
+      "origin": "Unknown"
+  },
+  {
+      "fullName": "Gazorpazorpfield",
+      "characterTrait": "Cynical",
+      "id": 14,
+      "origin": "Gazorpazorp"
+  },
+  {
+      "fullName": "Pickle Rick",
+      "characterTrait": "Pickle",
+      "id": 15,
+      "origin": "Earth"
+  },
+  {
+      "fullName": "Noob-Noob",
+      "characterTrait": "Janitor",
+      "id": 16,
+      "origin": "Unknown"
+  },
+  {
+      "fullName": "Tammy Guetermann",
+      "characterTrait": "Undercover Agent",
+      "id": 17,
+      "origin": "Earth"
+  },
+  {
+      "fullName": "Phoenixperson",
+      "characterTrait": "Revived Cyborg",
+      "id": 18,
+      "origin": "Unknown"
+  },
+  {
+      "fullName": "Beth Clone",
+      "characterTrait": "Clone",
+      "id": 19,
+      "origin": "Unknown"
+  },
+  {
+      "fullName": "Krombopulos Michael",
+      "characterTrait": "Assassin",
+      "id": 20,
+      "origin": "Unknown"
+  },
+  {
+    "fullName": "Annie",
+    "characterTrait": "Telepathic Receptionist",
+    "id": 22,
+    "origin": "Earth"
+  },
+  {
+    "fullName": "Arthricia",
+    "characterTrait": "Resistance Leader",
+    "id": 23,
+    "origin": "Gazorpazorp"
+  },
+  {
+    "fullName": "Crocubot",
+    "characterTrait": "Cybernetic Crocodile",
+    "id": 24,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Dr. Xenon Bloom",
+    "characterTrait": "Floral Geneticist",
+    "id": 25,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Ethan",
+    "characterTrait": "Survivor",
+    "id": 26,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Gazorpazorpian",
+    "characterTrait": "Alien",
+    "id": 27,
+    "origin": "Gazorpazorp"
+  },
+  {
+    "fullName": "Hemorrhage",
+    "characterTrait": "Leader of the Deathstalkers",
+    "id": 28,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Jessica",
+    "characterTrait": "High School Student",
+    "id": 29,
+    "origin": "Earth"
+  },
+  {
+    "fullName": "Keara",
+    "characterTrait": "Ice Cream Woman",
+    "id": 30,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Lucius Needful",
+    "characterTrait": "Salesman",
+    "id": 31,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Million Ants",
+    "characterTrait": "Collective Consciousness",
+    "id": 32,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Mr. Goldenfold",
+    "characterTrait": "Teacher",
+    "id": 33,
+    "origin": "Earth"
+  },
+  {
+    "fullName": "Poncho",
+    "characterTrait": "Illegal Alien",
+    "id": 34,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Revolio Clockberg Jr.",
+    "characterTrait": "Engineer",
+    "id": 35,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Shrimply Pibbles",
+    "characterTrait": "Galactic Diplomat",
+    "id": 36,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Sleepy Gary",
+    "characterTrait": "Hypnotist",
+    "id": 37,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Snuffles",
+    "characterTrait": "Sentient Dog",
+    "id": 38,
+    "origin": "Earth"
+  },
+  {
+    "fullName": "Squanchy",
+    "characterTrait": "Party Animal",
+    "id": 39,
+    "origin": "Squanch"
+  },
+  {
+    "fullName": "Tinkles",
+    "characterTrait": "Imaginary Friend",
+    "id": 40,
+    "origin": "Unknown"
+  },{
+    "fullName": "Alan Rails",
+    "characterTrait": "Ghost Train Conductor",
+    "id": 42,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Baby Legs",
+    "characterTrait": "Detective",
+    "id": 43,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Cousin Nicky",
+    "characterTrait": "Unknown",
+    "id": 44,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Davin",
+    "characterTrait": "Unknown",
+    "id": 45,
+    "origin": "Earth"
+  },
+  {
+    "fullName": "Ethan",
+    "characterTrait": "Survivor",
+    "id": 46,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Frank Palicky",
+    "characterTrait": "Unknown",
+    "id": 47,
+    "origin": "Earth"
+  },
+  {
+    "fullName": "Fart",
+    "characterTrait": "Gas-Based Life Form",
+    "id": 48,
+    "origin": "Unknown"
+  },
+  {
+    "fullName": "Gene Vagina",
+    "characterTrait": "Unknown",
+    "id": 49,
+    "origin": "Earth"
+  },
+  {
+    "fullName": "Gwendolyn",
+    "characterTrait": "Unknown",
+    "id": 50,
+    "origin": "Earth"
   }
 ]
+}
